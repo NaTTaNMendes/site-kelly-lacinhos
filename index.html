@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lacinhos Kelly - Catálogo</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-brand {
+            font-family: 'Dancing Script', cursive;
+        }
+        .nav-link.active {
+            color: #db2777; /* pink-600 */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-pink-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img src="imagens/logo empresa.PNG" alt="Logo Lacinhos Kelly" class="h-14 w-auto">
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#showroom" class="nav-link text-gray-600 hover:text-pink-600 transition duration-300">Modelos</a>
+                <a href="#colors" class="nav-link text-gray-600 hover:text-pink-600 transition duration-300">Cores</a>
+                <a href="#about" class="nav-link text-gray-600 hover:text-pink-600 transition duration-300">Sobre</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-pink-600 transition duration-300">Contato</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#showroom" class="block nav-link text-gray-600 hover:text-pink-600 transition duration-300">Modelos</a>
+            <a href="#colors" class="block nav-link text-gray-600 hover:text-pink-600 transition duration-300">Cores</a>
+            <a href="#about" class="block nav-link text-gray-600 hover:text-pink-600 transition duration-300">Sobre</a>
+            <a href="#contact" class="block nav-link text-gray-600 hover:text-pink-600 transition duration-300">Contato</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[60vh] min-h-[400px] bg-cover bg-center" style="background-image: url('imagens/fundo panel.png');">
+            <div class="absolute inset-0 bg-black/30"></div>
+            <div class="relative container mx-auto px-6 h-full flex flex-col justify-center items-center text-center text-white">
+                <h1 class="font-brand text-5xl md:text-7xl font-bold">Elegância em cada Laço</h1>
+                <p class="mt-4 text-lg md:text-xl max-w-2xl">Conheça nossa coleção exclusiva de lacinhos feitos à mão para todas as ocasiões.</p>
+            </div>
+        </section>
+
+        <!-- Showroom Section -->
+        <section id="showroom" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-brand font-bold text-center mb-12" style="font-family: 'Playfair Display', serif;">Nossos Modelos</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <img src="imagens/00.png" alt="Modelo 00" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">COD: 00</h3>
+                            <p class="text-gray-600 text-sm">Tamanho: 2 x 2.5 cm</p>
+                            <p class="text-gray-600 text-sm">Pacote: 100 unidades</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <img src="imagens/01.png" alt="Modelo 01" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">COD: 01</h3>
+                            <p class="text-gray-600 text-sm">Tamanho: 2.5 x 2.5 cm</p>
+                            <p class="text-gray-600 text-sm">Pacote: 50 unidades</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <img src="imagens/03.png" alt="Modelo 03" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">COD: 03</h3>
+                            <p class="text-gray-600 text-sm">Tamanho: 3.5 x 3.5 cm</p>
+                            <p class="text-gray-600 text-sm">Pacote: 25 unidades</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <img src="imagens/05.png" alt="Modelo 05" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">COD: 05</h3>
+                            <p class="text-gray-600 text-sm">Tamanho: 5 x 5 cm</p>
+                            <p class="text-gray-600 text-sm">Pacote: 20 unidades</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <img src="imagens/31.png" alt="Modelo 31" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">COD: 31</h3>
+                            <p class="text-gray-600 text-sm">Tamanho: 8.5 x 8.5 cm</p>
+                            <p class="text-gray-600 text-sm">Pacote: 08 unidades</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Colors Section -->
+        <section id="colors" class="py-16 md:py-24 bg-pink-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-brand font-bold text-center mb-12" style="font-family: 'Playfair Display', serif;">Cores Disponíveis</h2>
+                <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4 md:gap-6">
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white border shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Branco</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-pink-200 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Rosa BB</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-pink-400 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Rosa Hera</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-red-500 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Vermelho</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-pink-600 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Pink</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-yellow-400 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Canário</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-blue-300 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Azul Claro</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-blue-700 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Azul Escuro</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-purple-400 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Lilás</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-[#F5F5DC] shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Marfim</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gray-900 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Preto</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-cyan-400 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Turquesa</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-green-600 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Verde Bandeira</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gray-400 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Prata</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-yellow-500 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Dourado</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-[#654321] shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Marrom</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-orange-500 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Rosa cítrico</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-orange-600 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Laranja Cítrico</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-lime-400 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Verde Cítrico</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-stone-800 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Chocolate</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-purple-700 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Lilás Escuro</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-orange-400 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Laranja</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-yellow-200 shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Amarelo Claro</p></div>
+                    <div class="text-center group"><div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-[#A8E6A3] shadow-md mx-auto group-hover:scale-110 transition-transform"></div><p class="mt-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Pistache Claro</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 md:py-24 bg-pink-50">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="imagens/nossa historia.png" alt="Sobre Nós" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl font-brand font-bold mb-6" style="font-family: 'Playfair Display', serif;">Feito com Amor</h2>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Em Lacinhos Kelly, acreditamos que um simples laço pode transformar o ordinário em algo extraordinário. Nossa jornada começou com a paixão pelo detalhe e o amor pelo design atemporal.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Cada laço é feito à mão por nossos artesãos qualificados, usando apenas os melhores materiais, garantindo um produto que não é apenas bonito, mas também durável.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-brand font-bold mb-4" style="font-family: 'Playfair Display', serif;">Entre em Contato</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-8">
+                    Tem alguma dúvida ou um pedido personalizado? Adoraríamos ouvir de você! Entre em contato por e-mail ou siga nossa jornada nas redes sociais.
+                </p>
+                <div class="flex justify-center items-center space-x-6">
+                    <a href="mailto:kellylacinhos@outlook.com" class="bg-pink-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-pink-700 transition-colors duration-300 shadow-lg">
+                        Enviar E-mail
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/47996867798" target="_blank"
+    class="fixed bottom-6 right-6 bg-green-500 p-3 rounded-full shadow-lg hover:bg-green-600 transition-transform hover:scale-110 z-50">
+        <img src="imagens/wpp.png" alt="WhatsApp" class="h-8 w-8 object-contain">
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-white py-8">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 Lacinhos Kelly. Todos os direitos reservados.</p>
+            <p class="text-sm mt-1">Design feito com &hearts; pelo amor aos laços.</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- Mobile Menu Toggle ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // --- Active Navigation Link on Scroll ---
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5 
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    document.querySelectorAll(`a[href*="${id}"]`).forEach(activeLink => activeLink.classList.add('active'));
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => observer.observe(section));
+
+        const mobileNavLinks = document.querySelectorAll('#mobile-menu a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+    </script>
+</body>
+</html>
